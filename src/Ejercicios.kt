@@ -127,3 +127,14 @@ fun organizarMaleta() {
 
     println(mapa)
 }
+
+fun rutaEspejo() {
+    val lista = listOf(1, 2, 3, 2, 1)
+    var ok = true
+
+    for (i in 0 until lista.size / 2) {
+        if (lista[i] != lista[lista.size - 1 - i]) ok = false
+    }
+
+    println(ok)
+}
