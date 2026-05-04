@@ -172,3 +172,21 @@ fun mantenimientoSensores() {
 
     println("Sensores funcionales: $listaSensores")
 }
+
+fun analisisMatrizAlmacen() {
+    val matriz = arrayOf(
+        arrayOf(8, 4, 2, 5),
+        arrayOf(5, 12, 4, 2),
+        arrayOf(1, 3, 15, 3),
+        arrayOf(12, 0, 4, 22)
+    )
+    var sumaPrincipal = 0
+    var sumaSecundaria = 0
+    val tamaño = matriz.size
+    for (i in 0 until tamaño) {
+        sumaPrincipal += matriz[i][i]
+        sumaSecundaria += matriz[i][tamaño - 1 - i]
+    }
+
+    println("Suma Principal: $sumaPrincipal, Suma Secundaria: $sumaSecundaria")
+}

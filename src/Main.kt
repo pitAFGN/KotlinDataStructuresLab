@@ -17,4 +17,5 @@ fun main() {
     ticketUnico()
     calcularIVA()
     mantenimientoSensores()
+    analisisMatrizAlmacen()
 }
