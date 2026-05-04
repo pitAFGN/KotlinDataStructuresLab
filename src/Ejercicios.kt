@@ -85,3 +85,14 @@ fun inventario() {
 
     println(almacen)
 }
+
+fun promedioNotas() {
+    val listaNotas = listOf(4.0 to 0.2, 4.8 to 0.3, 3.0 to 0.5)
+    var acumulado = 0.0
+
+    for (par in listaNotas) {
+        acumulado += par.first * par.second
+    }
+
+    println(acumulado)
+}
