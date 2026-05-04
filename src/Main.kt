@@ -18,4 +18,5 @@ fun main() {
     calcularIVA()
     mantenimientoSensores()
     analisisMatrizAlmacen()
+    fusionRecetas()
 }

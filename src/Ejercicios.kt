@@ -190,3 +190,14 @@ fun analisisMatrizAlmacen() {
 
     println("Suma Principal: $sumaPrincipal, Suma Secundaria: $sumaSecundaria")
 }
+
+fun fusionRecetas() {
+    val recetaChef1 = mapOf("Sal" to 10.0, "Pimienta" to 5.0, "Carne" to 1000.0)
+    val recetaChef2 = mapOf("Leche" to 5.0, "Azúcar" to 100.0, "Harina" to 200.0)
+
+    val listaCompras = (recetaChef1.keys + recetaChef2.keys).associateWith {
+        (recetaChef1[it] ?: 0.0) + (recetaChef2[it] ?: 0.0)
+    }
+
+    println("Lista de compras: $listaCompras")
+}
