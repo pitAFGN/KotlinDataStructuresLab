@@ -306,6 +306,26 @@ fun rendimientoMaraton() {
     listaTiempos.removeAt(listaTiempos.size - 1)
     val promedioFinal = listaTiempos.average()
 
-    println("\n--- Rendimiento Maratón ---")
     println("Promedio sin outliers: $promedioFinal")
+}
+
+fun comprimirLogs() {
+    val listaLogs = listOf("UP", "DOWN", "DOWN", "DOWN")
+    val resultadoCompresion = mutableListOf<Pair<String, Int>>()
+    if (listaLogs.isNotEmpty()) {
+        var estadoActual = listaLogs[0]
+        var contador = 0
+        for (log in listaLogs) {
+            if (log == estadoActual) {
+                contador++
+            } else {
+                resultadoCompresion.add(estadoActual to contador)
+                estadoActual = log
+                contador = 1
+            }
+        }
+        resultadoCompresion.add(estadoActual to contador)
+    }
+
+    println("Resumen: $resultadoCompresion")
 }

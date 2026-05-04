@@ -26,4 +26,5 @@ fun main() {
     seguimientoCalorias()
     validarParentesis()
     rendimientoMaraton()
+    comprimirLogs()
 }
