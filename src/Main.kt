@@ -9,4 +9,5 @@ fun main() {
     interesesCompartidos()
     inventario()
     promedioNotas()
+    codigosPaises()
 }

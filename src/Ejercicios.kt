@@ -96,3 +96,11 @@ fun promedioNotas() {
 
     println(acumulado)
 }
+
+fun codigosPaises() {
+    val mapa = mapOf("Co" to "Colombia", "Pam" to "Panama", "Ar" to "Argentina", "Es" to "España")
+
+    for ((clave, valor) in mapa) {
+        println("$clave -> $valor")
+    }
+}
