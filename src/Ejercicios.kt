@@ -138,3 +138,14 @@ fun rutaEspejo() {
 
     println(ok)
 }
+
+fun repartoPedidos() {
+    val listaPaquetes = (1..50).toList().map { "Paquete #$it" }
+    val grupos = listaPaquetes.chunked(10)
+
+    println("\n--- Reparto de Pedidos ---")
+    grupos.forEachIndexed { indice, grupo ->
+        println("Camión ${indice + 1}: ${grupo.size} paquetes")
+    }
+}
+

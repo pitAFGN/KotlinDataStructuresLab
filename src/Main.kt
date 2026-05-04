@@ -13,4 +13,5 @@ fun main() {
     rotacionEmpleados()
     organizarMaleta()
     rutaEspejo()
+    repartoPedidos()
 }
