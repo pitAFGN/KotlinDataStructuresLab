@@ -10,4 +10,5 @@ fun main() {
     inventario()
     promedioNotas()
     codigosPaises()
+    rotacionEmpleados()
 }

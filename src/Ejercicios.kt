@@ -104,3 +104,15 @@ fun codigosPaises() {
         println("$clave -> $valor")
     }
 }
+
+fun rotacionEmpleados() {
+    val lista = listOf("Empleado 1", "Empleado 2", "Empleado 3", "Empleado 4",)
+    val salto = 2
+    val resultado = mutableListOf<String>()
+
+    for (i in lista.indices) {
+        resultado.add(lista[(i + salto) % lista.size])
+    }
+
+    println(resultado)
+}
