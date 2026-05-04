@@ -28,4 +28,5 @@ fun main() {
     rendimientoMaraton()
     comprimirLogs()
     premiarVendedores()
+    calcularParking()
 }

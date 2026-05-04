@@ -337,3 +337,11 @@ fun premiarVendedores() {
 
     println("Promedio: $promedioVentas, Premiados: $listaPremiados")
 }
+
+fun calcularParking() {
+    val mapaTarifas = (1..10).associateWith { it * 3000.0 }
+    val horasUso = 5
+    val valorTotal = mapaTarifas[horasUso] ?: (horasUso * 1500.0)
+
+    println("Costo por $horasUso horas: $valorTotal")
+}
