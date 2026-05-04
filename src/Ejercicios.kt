@@ -216,3 +216,24 @@ fun rankingApps() {
 
     println("Top Apps: $listaApps")
 }
+
+fun fusionAgendas() {
+    val lista1 = listOf("Pipe", "Andres", "Felipe")
+    val lista2 = listOf("Carlos", "Jhonny", "Fabio")
+
+    val resultado = mutableListOf<String>()
+    var indice1 = 0
+    var indice2 = 0
+
+    while (indice1 < lista1.size && indice2 < lista2.size) {
+        if (lista1[indice1] < lista2[indice2]) {
+            resultado.add(lista1[indice1++])
+        } else {
+            resultado.add(lista2[indice2++])
+        }
+    }
+    while (indice1 < lista1.size) resultado.add(lista1[indice1++])
+    while (indice2 < lista2.size) resultado.add(lista2[indice2++])
+
+    println("Agenda Fusionada: $resultado")
+}
