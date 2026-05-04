@@ -252,3 +252,14 @@ fun calcularNumerosPrimos() {
 
     println("Pisos con mantenimiento: $listaPrimos")
 }
+
+fun pilaPlatos() {
+    val listaPila = mutableListOf<String>()
+    fun agregar(plato: String) = listaPila.add(plato)
+    fun quitar(): String? = if (listaPila.isNotEmpty()) listaPila.removeAt(listaPila.size - 1) else null
+
+    agregar("Plato Seco")
+    agregar("Plato Sopa")
+    println("Lavandose: ${quitar()}")
+    println("Pila restante: $listaPila")
+}

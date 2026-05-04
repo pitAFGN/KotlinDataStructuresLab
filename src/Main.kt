@@ -22,4 +22,5 @@ fun main() {
     rankingApps()
     fusionAgendas()
     calcularNumerosPrimos()
+    pilaPlatos()
 }
