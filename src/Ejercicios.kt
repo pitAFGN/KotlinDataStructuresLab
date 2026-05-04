@@ -237,3 +237,18 @@ fun fusionAgendas() {
 
     println("Agenda Fusionada: $resultado")
 }
+
+fun calcularNumerosPrimos() {
+    val limite = 200
+    val arregloPrimos = BooleanArray(limite + 1) { true }
+    arregloPrimos[0] = false
+    arregloPrimos[1] = false
+    for (p in 2..Math.sqrt(limite.toDouble()).toInt()) {
+        if (arregloPrimos[p]) {
+            for (i in p * p..limite step p) arregloPrimos[i] = false
+        }
+    }
+    val listaPrimos = (1..limite).filter { arregloPrimos[it] }
+
+    println("Pisos con mantenimiento: $listaPrimos")
+}
