@@ -14,3 +14,13 @@ fun controlGastos() {
 
     println("Total: $sumaTotal, Promedio: $promedio, Máximo: $gastoMax, Mínimo: $gastoMin")
 }
+
+fun empleadosMayores() {
+    val lista = listOf("Andres" to 25, "Emmanuel" to 30, "Sarah" to 40, "David" to 28, "Elena" to 31)
+
+    val resultado = lista
+        .filter { it.second > 30 }
+        .map { it.first.uppercase() }
+
+    println(resultado)
+}
