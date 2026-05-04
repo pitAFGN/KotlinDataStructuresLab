@@ -27,4 +27,5 @@ fun main() {
     validarParentesis()
     rendimientoMaraton()
     comprimirLogs()
+    premiarVendedores()
 }

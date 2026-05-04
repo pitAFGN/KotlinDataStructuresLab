@@ -329,3 +329,11 @@ fun comprimirLogs() {
 
     println("Resumen: $resultadoCompresion")
 }
+
+fun premiarVendedores() {
+    val mapaVentas = mapOf("Juan" to 5000.0, "Felipe" to 8000.0, "Luis" to 4000.0, "Ivan" to 9000.0)
+    val promedioVentas = mapaVentas.values.average()
+    val listaPremiados = mapaVentas.filter { it.value > promedioVentas }.keys
+
+    println("Promedio: $promedioVentas, Premiados: $listaPremiados")
+}
