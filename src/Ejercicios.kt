@@ -281,3 +281,20 @@ fun seguimientoCalorias() {
 
     println("Diferencias vs Promedio Anterior: $listaDiferencias")
 }
+
+fun validarParentesis() {
+    val cadena = "(()(())())"
+    var contador = 0
+    var esCorrecto = true
+    for (caracter in cadena) {
+        if (caracter == '(') contador++
+        else if (caracter == ')') contador--
+        if (contador < 0) {
+            esCorrecto = false
+            break
+        }
+    }
+    if (contador != 0) esCorrecto = false
+
+    println("Manifiesto: $cadena - ¿Válido?: $esCorrecto")
+}
