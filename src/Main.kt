@@ -5,4 +5,5 @@ fun main() {
     empleadosMayores()
     limpiarContactos()
     carritoCompras()
+    historialInvertido()
 }

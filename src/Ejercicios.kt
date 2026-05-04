@@ -42,3 +42,15 @@ fun carritoCompras() {
 
     println(conteo)
 }
+
+fun historialInvertido() {
+    val paginas = arrayOf("google.com", "github.com", "pornhub.com", "xnxx.com", "MeVocatio.com")
+    val reverso = arrayOfNulls<String>(paginas.size)
+
+    for (i in paginas.indices) {
+        reverso[i] = paginas[paginas.size - 1 - i]
+    }
+
+    println(paginas.joinToString())
+    println(reverso.joinToString())
+}
