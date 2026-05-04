@@ -15,4 +15,5 @@ fun main() {
     rutaEspejo()
     repartoPedidos()
     ticketUnico()
+    calcularIVA()
 }

@@ -156,3 +156,12 @@ fun ticketUnico() {
 
     println("ticket único: $TicketUnico")
 }
+
+fun calcularIVA() {
+    val listaProductos = mapOf("Arroz" to 3000.0, "Carne" to 80000.0, "Vino" to 100000.0, "Sal" to 2500.0)
+    val preciosFinales = listaProductos.mapValues { (_, valor) ->
+        if (valor > 50000) valor * 1.19 else valor
+    }
+
+    println("Precio con IVA: $preciosFinales")
+}
