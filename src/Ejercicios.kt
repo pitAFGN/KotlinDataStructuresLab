@@ -201,3 +201,18 @@ fun fusionRecetas() {
 
     println("Lista de compras: $listaCompras")
 }
+
+fun rankingApps() {
+    val listaApps = mutableListOf("App 1" to 3.5, "App 2" to 4.8, "App 3" to 3.9)
+    for (i in 0 until listaApps.size - 1) {
+        for (j in 0 until listaApps.size - 1 - i) {
+            if (listaApps[j].second < listaApps[j + 1].second) {
+                val temp = listaApps[j]
+                listaApps[j] = listaApps[j + 1]
+                listaApps[j + 1] = temp
+            }
+        }
+    }
+
+    println("Top Apps: $listaApps")
+}
