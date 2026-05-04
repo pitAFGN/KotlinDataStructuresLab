@@ -24,3 +24,10 @@ fun empleadosMayores() {
 
     println(resultado)
 }
+
+fun limpiarContactos() {
+    val numeros = listOf("300123", "311456", "300123", "320789", "311456", "350111", "300123")
+    val resultado = numeros.toSet().sorted()
+
+    println(resultado)
+}

@@ -3,4 +3,5 @@
 fun main() {
     controlGastos()
     empleadosMayores()
+    limpiarContactos()
 }
