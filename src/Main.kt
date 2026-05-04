@@ -29,4 +29,5 @@ fun main() {
     comprimirLogs()
     premiarVendedores()
     calcularParking()
+    encontrarParejaPeso()
 }

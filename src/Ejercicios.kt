@@ -345,3 +345,21 @@ fun calcularParking() {
 
     println("Costo por $horasUso horas: $valorTotal")
 }
+
+fun encontrarParejaPeso() {
+    val listaPesos = listOf(11, 14, 26, 7, 19)
+    val objetivo = 30
+    var resultado: Pair<Int, Int>? = null
+    val setVistos = mutableSetOf<Int>()
+
+    for (peso in listaPesos) {
+        val complemento = objetivo - peso
+        if (setVistos.contains(complemento)) {
+            resultado = complemento to peso
+            break
+        }
+        setVistos.add(peso)
+    }
+
+    println("Para target $objetivo, pareja encontrada: $resultado")
+}
