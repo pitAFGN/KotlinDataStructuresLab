@@ -54,3 +54,14 @@ fun historialInvertido() {
     println(paginas.joinToString())
     println(reverso.joinToString())
 }
+
+fun interesesCompartidos() {
+    val gustos1 = setOf("Cine", "Música", "Viajes", "VideoJuegos")
+    val gustos2 = setOf("Música", "Deportes", "Viajes", "Cocina")
+
+    val comunes = gustos1.intersect(gustos2)
+    val soloUno = gustos1.subtract(gustos2)
+
+    println(comunes)
+    println(soloUno)
+}
