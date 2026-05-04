@@ -116,3 +116,14 @@ fun rotacionEmpleados() {
 
     println(resultado)
 }
+
+fun organizarMaleta() {
+    val lista = listOf("Ropa" to 2, "Zapatos" to 1)
+    val mapa = mutableMapOf<Int, MutableList<String>>()
+
+    for (obj in lista) {
+        mapa.getOrPut(obj.second) { mutableListOf() }.add(obj.first)
+    }
+
+    println(mapa)
+}
