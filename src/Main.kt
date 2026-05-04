@@ -23,4 +23,5 @@ fun main() {
     fusionAgendas()
     calcularNumerosPrimos()
     pilaPlatos()
+    seguimientoCalorias()
 }

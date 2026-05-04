@@ -263,3 +263,21 @@ fun pilaPlatos() {
     println("Lavandose: ${quitar()}")
     println("Pila restante: $listaPila")
 }
+
+fun seguimientoCalorias() {
+    val listaCalorias = listOf(4000.0, 4200.0, 4800.0, 3100.0, 4500.0)
+    val listaDiferencias = mutableListOf<Double>()
+    var acumulado = 0.0
+
+    for (i in listaCalorias.indices) {
+        if (i == 0) {
+            listaDiferencias.add(0.0)
+        } else {
+            val promedioAnterior = acumulado / i
+            listaDiferencias.add(listaCalorias[i] - promedioAnterior)
+        }
+        acumulado += listaCalorias[i]
+    }
+
+    println("Diferencias vs Promedio Anterior: $listaDiferencias")
+}
