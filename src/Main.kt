@@ -16,4 +16,5 @@ fun main() {
     repartoPedidos()
     ticketUnico()
     calcularIVA()
+    mantenimientoSensores()
 }

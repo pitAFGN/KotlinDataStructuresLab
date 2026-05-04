@@ -165,3 +165,10 @@ fun calcularIVA() {
 
     println("Precio con IVA: $preciosFinales")
 }
+
+fun mantenimientoSensores() {
+    val listaSensores = mutableListOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    listaSensores.removeAll { it % 3 == 0 }
+
+    println("Sensores funcionales: $listaSensores")
+}
