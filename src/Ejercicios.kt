@@ -31,3 +31,14 @@ fun limpiarContactos() {
 
     println(resultado)
 }
+
+fun carritoCompras() {
+    val productos = listOf("Leche", "Huevo", "Lechuga", "Tomate", "Pan", "Leche", "Café")
+    val conteo = mutableMapOf<String, Int>()
+
+    for (item in productos) {
+        conteo[item] = conteo.getOrDefault(item, 0) + 1
+    }
+
+    println(conteo)
+}

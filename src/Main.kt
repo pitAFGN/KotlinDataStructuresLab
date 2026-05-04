@@ -4,4 +4,5 @@ fun main() {
     controlGastos()
     empleadosMayores()
     limpiarContactos()
+    carritoCompras()
 }
