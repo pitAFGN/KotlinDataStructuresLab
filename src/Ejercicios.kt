@@ -363,3 +363,24 @@ fun encontrarParejaPeso() {
 
     println("Para target $objetivo, pareja encontrada: $resultado")
 }
+
+fun transponerMatriz() {
+    val matrizOriginal = arrayOf(
+        arrayOf("a1", "a2"),
+        arrayOf("b1", "b2"),
+        arrayOf("c1", "c2")
+    )
+    val filas = matrizOriginal.size
+    val columnas = matrizOriginal[0].size
+    val matrizTranspuesta = Array(columnas) { Array(filas) { "" } }
+
+    for (i in 0 until filas) {
+        for (j in 0 until columnas) {
+            matrizTranspuesta[j][i] = matrizOriginal[i][j]
+        }
+    }
+
+    for (fila in matrizTranspuesta) {
+        println(fila.joinToString(" | "))
+    }
+}

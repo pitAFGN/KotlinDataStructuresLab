@@ -30,4 +30,5 @@ fun main() {
     premiarVendedores()
     calcularParking()
     encontrarParejaPeso()
+    transponerMatriz()
 }
