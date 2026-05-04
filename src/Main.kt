@@ -7,4 +7,5 @@ fun main() {
     carritoCompras()
     historialInvertido()
     interesesCompartidos()
+    inventario()
 }

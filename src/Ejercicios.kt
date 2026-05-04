@@ -65,3 +65,23 @@ fun interesesCompartidos() {
     println(comunes)
     println(soloUno)
 }
+
+fun inventario() {
+    val almacen = mutableMapOf("Arroz" to 6, "Avena" to 2, "Papas" to 1)
+
+    fun usar(nombre: String, cantidad: Int) {
+        val actual = almacen[nombre] ?: 0
+        val nuevo = actual - cantidad
+
+        if (nuevo <= 0) {
+            almacen.remove(nombre)
+        } else {
+            almacen[nombre] = nuevo
+        }
+    }
+
+    usar("Leche", 1)
+    usar("Arroz", 2)
+
+    println(almacen)
+}
