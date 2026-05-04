@@ -298,3 +298,14 @@ fun validarParentesis() {
 
     println("Manifiesto: $cadena - ¿Válido?: $esCorrecto")
 }
+
+fun rendimientoMaraton() {
+    val listaTiempos = mutableListOf(120.0, 115.0, 140.0, 110.0, 130.0)
+    listaTiempos.sort()
+    listaTiempos.removeAt(0)
+    listaTiempos.removeAt(listaTiempos.size - 1)
+    val promedioFinal = listaTiempos.average()
+
+    println("\n--- Rendimiento Maratón ---")
+    println("Promedio sin outliers: $promedioFinal")
+}

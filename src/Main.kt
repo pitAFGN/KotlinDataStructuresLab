@@ -25,4 +25,5 @@ fun main() {
     pilaPlatos()
     seguimientoCalorias()
     validarParentesis()
+    rendimientoMaraton()
 }
