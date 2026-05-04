@@ -14,4 +14,5 @@ fun main() {
     organizarMaleta()
     rutaEspejo()
     repartoPedidos()
+    ticketUnico()
 }

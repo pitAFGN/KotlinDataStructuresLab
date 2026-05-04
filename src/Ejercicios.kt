@@ -149,3 +149,10 @@ fun repartoPedidos() {
     }
 }
 
+fun ticketUnico() {
+    val listaTickets = listOf("ERR-01", "ERR-02", "ERR-01", "ERR-03", "ERR-02", "ERR-04")
+    val conteoTickets = listaTickets.groupingBy { it }.eachCount()
+    val TicketUnico = listaTickets.firstOrNull { conteoTickets[it] == 2 }
+
+    println("ticket único: $TicketUnico")
+}
